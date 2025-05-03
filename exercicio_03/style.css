@@ -1,0 +1,73 @@
+body {
+  background: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  margin: 40px;
+}
+
+.ilustracao {
+  width: 320px;
+  margin-right: 40px;
+}
+
+.formulario {
+  flex: 1;
+}
+
+h1 {
+  font-size: 2.2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+label {
+  display: inline-block;
+  margin: 15px 0 5px 0;
+  font-size: 1.1em;
+}
+
+input[type="number"] {
+  padding: 5px 8px;
+  font-size: 1em;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 80px;
+  box-sizing: border-box;
+  text-align: right;
+}
+
+.conv {
+  margin: 10px 0 15px 0;
+  font-size: 1.1em;
+}
+
+button {
+  display: block;
+  margin: 15px 0;
+  padding: 7px 18px;
+  font-size: 1em;
+  background: #e6e6e6;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #256025;
+  color: #fff;
+}
+
+#resultado {
+  margin-top: 20px;
+  font-size: 1.15em;
+  color: #222;
+  font-family: 'Courier New', Courier, monospace;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Veterinária Avenida</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <img src="img/tela.png" alt="Ilustração" class="ilustracao">
+    <div class="formulario">
+      <h1>Veterinária Avenida</h1>
+      <label for="valor">Valor da Vacina:</label>
+      <input type="number" id="valor" step="0.01" placeholder="0,00">
+      <div class="conv">
+        <span>Possui Convênio:</span>
+        <input type="radio" name="convenio" id="sim" value="sim" onclick="toggleConvenio()">
+        <label for="sim">Sim</label>
+        <input type="radio" name="convenio" id="nao" value="nao" checked onclick="toggleConvenio()">
+        <label for="nao">Não</label>
+        <select id="selectConvenio" style="display:none; margin-left:10px;">
+          <option value="amigo">Amigo dos Animais</option>
+          <option value="saude">Saúde Animal</option>
+        </select>
+      </div>
+      <button onclick="calcularDescontoFinal()">Calcular Desconto</button>
+      <div id="resultado"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
